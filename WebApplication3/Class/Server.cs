@@ -1,19 +1,18 @@
 ﻿namespace WebApplication3.Class
 {
-    public class Server
+    public static class Server
     {
-        public static int Count { get; set; }
 
         //Позволяет прочитать
         public static int GetCount()
         {
-            return Count;
+            return CountDB.Count;
         }
 
         //Позволяет добавить значение
         public static void AddToCount(int value)
         {
-            Count += value;
+            CountDB.Count += value;
         }
     }
 }
